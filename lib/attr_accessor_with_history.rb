@@ -6,9 +6,14 @@ class Class
     class_eval %Q{
       
       def #{attr_name}=(val)
-    
-      
-      
+        if @#{attr_name}_history == nil then
+          @#{attr_name}_history = [nil]
+        else
+          @#{attr_name}_history << @#{attr_name}
+        end
+          
+        @#{attr_name} = val
+        
       end
       
       

@@ -15,15 +15,6 @@ class Class
         @#{attr_name} = val
         
       end
-      
-      
-      
-      
-      
-      
-      
-      
-      
     }
   end
 end
